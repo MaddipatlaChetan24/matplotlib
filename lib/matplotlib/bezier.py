@@ -13,7 +13,7 @@ from matplotlib import _api
 
 def _quadratic_roots_in_01(c0, c1, c2):
     """Real roots of c0 + c1*x + c2*x**2 in [0, 1]."""
-    if abs(c2) < 1e-12:  # Linear
+    if abs(c2) < 1e-12:  # Linea
         if abs(c1) < 1e-12:
             return np.array([])
         root = -c0 / c1
